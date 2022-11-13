@@ -18,5 +18,5 @@ rule suspicious_base64_vjw0rm {
         $vjw0rm = "vjw0rm" base64
 
     condition:
-        (3 of ($string*)) or $vjw0rm
+        ($string*) or $vjw0rm
 }
